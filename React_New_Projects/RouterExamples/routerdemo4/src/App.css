@@ -1,0 +1,15 @@
+a {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a.active {
+    font-weight: bold;
+    color: crimson;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: lightgray;
+}
