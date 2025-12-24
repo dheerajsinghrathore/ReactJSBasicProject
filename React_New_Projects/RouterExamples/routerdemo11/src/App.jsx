@@ -6,6 +6,7 @@ import NotFound from "./components/NotFound";
 import "./App.css";
 import Posts from "./components/Posts";
 import PostList from "./components/PostList";
+import PostDetails from "./components/PostDetails";
 
 function App() {
   const blogPosts = [
@@ -45,6 +46,7 @@ function App() {
 
         <Route path="/posts" element={<Posts />}>
           <Route index element={<PostList posts={blogPosts} />} />
+          <Route path=":postId" element={<PostDetails posts={blogPosts} />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
