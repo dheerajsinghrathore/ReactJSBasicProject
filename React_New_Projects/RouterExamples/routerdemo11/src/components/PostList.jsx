@@ -8,7 +8,11 @@ function PostList({ posts }) {
     <div>
       <ul>
         {blogPosts.map((post) => {
-          return <li key={post.id}><Link to={`/posts/${post.id}`}>{post.title}</Link></li>;
+          return (
+            <li key={post.id}>
+              <Link to={`/posts/${post.id}`}>{post.title}</Link>
+            </li>
+          );
         })}
       </ul>
     </div>
