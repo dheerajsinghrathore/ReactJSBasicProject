@@ -1,0 +1,12 @@
+a.abhi {
+	color: #000;
+	padding: 5px;
+	text-decoration: none;
+}
+a.abhi.active {
+	color: crimson;
+	text-decoration: underline;
+}
+a.abhi:hover {
+	color: blueviolet;
+}
