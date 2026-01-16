@@ -1,0 +1,143 @@
+:root {
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2d3436;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.counter-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.counter-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #636e72;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.counter-display {
+  background: #2d3436;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.counter-value {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #00cec9;
+  text-shadow: 0 0 20px rgba(0, 206, 201, 0.4);
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.counter-input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #dfe6e9;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.counter-input:focus {
+  border-color: #00cec9;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.9rem;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-primary {
+  background: #00cec9;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #00b894;
+  box-shadow: 0 4px 15px rgba(0, 206, 201, 0.3);
+}
+
+.btn-success {
+  background: #55efc4;
+  color: #00b894;
+}
+
+.btn-success:hover {
+  background: #00b894;
+  color: white;
+  box-shadow: 0 4px 15px rgba(85, 239, 196, 0.3);
+}
+
+.btn-danger {
+  background: #fab1a0;
+  color: #d63031;
+}
+
+.btn-danger:hover {
+  background: #ff7675;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 118, 117, 0.3);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #b2bec3;
+  color: #636e72;
+  grid-column: span 2;
+}
+
+.btn-outline:hover {
+  background: #b2bec3;
+  color: white;
+}
