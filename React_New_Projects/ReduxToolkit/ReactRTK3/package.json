@@ -1,0 +1,10 @@
+{
+  "name": "reactrtk2",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "cd vite-project && npm run dev",
+    "build": "cd vite-project && npm run build",
+    "preview": "cd vite-project && npm run preview",
+    "lint": "cd vite-project && npm run lint"
+  }
+}
